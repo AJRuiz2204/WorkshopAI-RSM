@@ -1,7 +1,17 @@
 ﻿namespace ArithmeticDemo.BasicMathOperations
-{public class Multiplication{
-            public static int MultiplicationOperation(int a, int b)
+{
+    // Defines a contract for binary arithmetic operations.
+    public interface IBinaryOperation
+    {
+        int Operate(int a, int b);
+    }
+
+    // Implements multiplication as a specific binary operation.
+    public class Multiplication : IBinaryOperation
+    {
+        public int Operate(int a, int b)
         {
-            return a x b;
+            return a * b;
         }
-    }}
+    }
+}

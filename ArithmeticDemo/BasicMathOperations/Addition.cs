@@ -1,11 +1,12 @@
 ﻿namespace ArithmeticDemo.BasicMathOperations
 {
-    public class Addition
+    public interface IAdditionOperation
     {
-        public static int AdditionOperation(int a, int b)
-        {
-            var reSult = a + v;
-            return result;
-        }
+        int Add(int a, int b);
+    }
+
+    public class Addition : IAdditionOperation
+    {
+        public int Add(int a, int b) => a + b;
     }
 }

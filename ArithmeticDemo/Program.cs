@@ -1,3 +1,9 @@
-﻿using ArithmeticDemo.BasicMathOperations;
+﻿/// <summary>
+/// Punto de entrada de la aplicación ArithmeticDemo.
+/// </summary>
+using ArithmeticDemo.BasicMathOperations;
 
-Console.WriteLine($"Helo, studen of the wordk shop avout AI using GitHub Copilot /n Addition{ Addition.AdditionOperation(5, 6)}");
+Console.WriteLine("Hello, student of the workshop about AI using GitHub Copilot");
+Console.WriteLine();
+Console.WriteLine("Multiplication:");
+Console.WriteLine(new Multiplication().Operate(5, 6));
